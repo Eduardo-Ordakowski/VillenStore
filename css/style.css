@@ -9,54 +9,173 @@
     outline: none;
     font-family: "Crimson Text", sans-serif;
 }
-
+/*Definindo as cores que vou utilizar*/
 :root {
 
     --black: #060606;
     --blackGrey: #161616;
+    --boardBlue: #243B97;
 }
 
 html, body {
-    width: 100%;
-    overflow-x: hidden;
+    width: 100%; /*Define para html e body o espaço que pode utilizar na tela*/
+    overflow-x: hidden; /*Se o conteudo transbordar ele esconde, sem barra de rolagem em baixo*/
 }
-
-header {
-    width: 100%;
-    height: 143;
-    background-color: var(--black);
-}
-
-.logo {
-    max-width: 1700px;
-    min-width: 300px;
-    margin: 0 auto;
+/*Configurando o menu de navegação*/
+nav{
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    align-items: center;
+    justify-content:space-between; /*Com isso cada item fica em um canto*/
+    padding: 50px;
+    background-color: #060606;
+    height: 15vh;
 }
 
-.iconButtons {
-    max-width: 1700px;
-    min-width: 300px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-nav ul li {
+/*Configurando os itens na lista (icones)*/
+.nav-list {
     list-style: none;
-    padding: 10px;
-    cursor: pointer;
+    display: flex;
 }
-
-nav ul li a {
-    color:white;
-    text-decoration: none;
+.nav-list li {
+    margin-left: 25px;
 }
-
+/*Definido a estrutura principal da pagina*/
 body{
     background-color: var(--blackGrey);
-    color:white;
+}
+/*Ajustando o png destaque (Procurar outra fonte e fazer text?)*/
+.destaque{
+    padding: 100px;
+    text-align: center; /*Mesmo que seja "text-align" ele alinha imagem*/
+}
+/*grid onde vai ficar as camisetas*/
+.container{
+    background-color: var(--black);
+    height:600px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.shirt1{
+    /*Alterando texto*/
+    color: white;
+    font-size: 25px;
+
+    /*Alterando molde*/
+    background-color: var(--blackGrey);
+    border-color: var(--boardBlue);
+    border-style:solid;
+    border-radius: 20px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    height: 500px;
+}
+/*Ajustando o tamanho das imagens. Desta forma elas se alinham no container.*/
+.shirt1 img {
+    max-width: 100%;
+}
+
+.shirt2{
+    color: white;
+    font-size: 25px;
+
+    align-content: center;
+    background-color: var(--blackGrey);
+    border-color: var(--boardBlue);
+    border-style:solid;
+    border-radius: 20px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    height: 500px;
+}
+.shirt2 img {
+    max-width: 100%;
+}
+
+.shirt3 {
+    color: white;
+    font-size: 25px;
+    
+    background-color: var(--blackGrey);
+    border-color: var(--boardBlue);
+    border-style:solid;
+    border-radius: 20px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    height: 500px;
+}
+.shirt3 img {
+    max-width: 80%;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    color: white;
+    background-color: var(--black);
+    height: auto;
+}
+/*O conteudo em geral que tem no Footer*/
+#footerContent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem;
+}
+
+/*Organizando a escrita*/
+#footerContacts h1 {
+    margin-bottom: 0.75rem;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*Organizando os links com imagem*/
+#footerSocialMedia {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    justify-content:center;
+    align-items: center;
+}
+
+#youtube img{
+    max-width: 35px;
+}
+
+#github img{
+    max-width: 100%;
+}
+
+/*Organizando a lista*/
+.footerList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.footerList .footerLink {
+    color: white;
+    font-size: 30px;
+}
+
+/*Por hora bobeira*/
+.bobeira {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
