@@ -20,33 +20,81 @@
 html, body {
     width: 100%; /*Define para html e body o espaço que pode utilizar na tela*/
     overflow-x: hidden; /*Se o conteudo transbordar ele esconde, sem barra de rolagem em baixo*/
+    background-color: var(--blackGrey);
 }
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #060606;
+    justify-content:space-between;/*Com isso cada item fica em um canto*/
+    align-items: center;
+    text-align: center;
+}
+
+.iconLogo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.iconLogo img{
+    width:35%
+}
+
+.inputGroup{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 8px 16px 8px 8px;
+    background-color: var(--blackGrey);
+    border-radius: 20px;
+    gap:20px
+}
+
+.inputField {
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.inputIcon img{
+    width: 30px;
+}
+
 /*Configurando o menu de navegação*/
 nav{
     display: flex;
-    align-items: center;
-    justify-content:space-between; /*Com isso cada item fica em um canto*/
-    padding: 50px;
-    background-color: #060606;
-    height: 15vh;
+    justify-content:center;
+    list-style: none;
 }
 
 /*Configurando os itens na lista (icones)*/
 .nav-list {
-    list-style: none;
     display: flex;
+    list-style: none;
+}
+
+.nav-list #userIcon {
+    width: 45px;
+}
+
+.nav-list #shopIcon {
+    width: 45px;
+ 
 }
 .nav-list li {
-    margin-left: 25px;
+    margin-left: 40px
 }
-/*Definido a estrutura principal da pagina*/
-body{
-    background-color: var(--blackGrey);
-}
+
 /*Ajustando o png destaque (Procurar outra fonte e fazer text?)*/
 .destaque{
     padding: 100px;
     text-align: center; /*Mesmo que seja "text-align" ele alinha imagem*/
+}
+.destaque img {
+    width: 20%;
 }
 /*grid onde vai ficar as camisetas*/
 .container{
@@ -138,7 +186,7 @@ footer{
 /*Organizando a escrita*/
 #footerContacts h1 {
     margin-bottom: 0.75rem;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -152,7 +200,7 @@ footer{
 }
 
 #youtube img{
-    max-width: 35px;
+    max-width: 30px;
 }
 
 #github img{
@@ -169,13 +217,13 @@ footer{
 
 .footerList .footerLink {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /*Por hora bobeira*/
 .bobeira {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
