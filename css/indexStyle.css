@@ -21,6 +21,7 @@ html, body {
     width: 100%; /*Define para html e body o espaço que pode utilizar na tela*/
     overflow-x: hidden; /*Se o conteudo transbordar ele esconde, sem barra de rolagem em baixo*/
     background-color: var(--blackGrey);
+    color:white;
 }
 
 .header{
@@ -60,6 +61,8 @@ html, body {
 }
 
 .inputIcon img{
+    margin-top: 7px;
+    margin-left: 10px;
     width: 30px;
 }
 
@@ -81,6 +84,10 @@ nav{
 }
 
 .nav-list #shopIcon {
+    width: 45px;
+}
+
+.nav-list #uploadIcon {
     width: 45px;
  
 }
