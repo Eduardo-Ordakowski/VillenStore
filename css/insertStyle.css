@@ -97,3 +97,55 @@ button:active {
   transform: scale(0.97); 
   background-color: var(--blackGrey);
 }
+
+/*Estilizando Modal*/
+
+.modal-header{
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    border-radius: 0px;
+    border-color: var(--black);
+    
+}
+
+/*Modal Botoões*/
+.buttonClose {
+    padding: 10px;
+}
+
+.buttonClose img{
+    width: 30px;
+}
+
+.modal-body {
+    background-color: var(--blackGrey);
+}
+.modal-body form{
+    border-radius: 0px;
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--blackGrey);
+    padding: 0px;
+}
+
+.modal-body form .modalImgHolder{
+    position: relative;
+}
+.modal-body form img {
+    padding: 10px;
+    height: 110px;
+    width: 110px;
+}
+
+
+.modal-body form .inputField{
+    flex-basis: 68px;
+    padding-left: 200px;
+
+}
+
+.modal-footer {
+    background-color: var(--black);
+    border-color: var(--black);
+}

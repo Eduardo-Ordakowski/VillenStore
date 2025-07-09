@@ -1,0 +1,3 @@
+Alterar as variáveis que estão erradas lá - itemType itemPrice - tá puxando errado no baguio
+Não pega decimal no campo de price de preço
+Atualizar cadastro está adicionado itens tbm kk
