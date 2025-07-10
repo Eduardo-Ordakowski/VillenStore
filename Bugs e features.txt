@@ -1,0 +1,3 @@
+Alterar as variáveis (item, price) para (itemType, itemPrice) - OK
+Decimal no campo de preço - Pendente
+Atualizar está cadastrando, entre outro pequenos detalhes visuais - Possivel correção: Fazer com que o modal feche após a função editar - Pendente
