@@ -126,33 +126,25 @@ nav{
     font-size: 20px;
 
     /*Alterando molde*/
+    display:grid;
+    columns: 1fr;
+    grid-template-rows: auto 1fr auto;
     background-color: var(--blackGrey);
     border-color: var(--boardBlue);
     border-style:solid;
     border-radius: 20px;
     width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
     padding: 30px;
     height: 550px;
+    align-items: center;
 }
 /*Ajustando o tamanho das imagens. Desta forma elas se alinham no container.*/
+
 .productImgCard img {
     max-width: 200px;
 }
 
-.productCardInfos{
-    margin-top: 50px;
-    justify-content: center;
-    text-align: center;
-}
-
 /*Estilizando botões*/
-
-.buttonAdd{
-    margin-top: 10px;
-}
 button {
     background-color: var(--blackGrey);
     border: 1px solid black;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
     <link rel="stylesheet" href="css/indexStyle.css">
+    <link rel="stylesheet" href="css/shopCartStyle.css">
 </head>
 <body>
     <header>
@@ -34,6 +35,32 @@
                 </nav>
         </div>
     </header>
+
+    <div class="banner">
+        <img src="icons/Meu carrinho.png">
+    </div>
+
+    <div class ="shopCartContainer">
+        <div class= "shopCartList">
+            <div class="shopList1">
+                <img id="productImg"src="products/camisetaGessingerLicks&Maltz.jpg"></img></td>
+                <p>Quantidade: 2</p>
+            </div>
+            <div class="shopList2">
+                <p>Camiseta Gessinger Licks & Maltz</p>
+                <p>R$ 20,99</p>
+            </div>
+            <div class="shopListIcon">
+                <button></button>
+            </div>
+        </div>
+
+        <div class="shopCartBuyButtons">
+            <button id="finishButton"> Finalizar compra</button>
+            <button id="keepBuyingButton"> Continuar comprando</button>
+        </div>
+    </div>
+
     <footer>
         <div id="footerContent">
             <div id="footerContacts">
@@ -53,6 +80,6 @@
         </div>
     </footer>
 
-        <script src="js/indexList.js"></script>
+        <script src="js/cartList.js"></script>
     </body>
 </html>

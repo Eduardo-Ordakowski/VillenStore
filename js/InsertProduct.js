@@ -82,6 +82,7 @@ function deleteInfo(index) {
 }
 
 form.addEventListener('submit', (e) => {
+    
     e.preventDefault();
 
     const information = {

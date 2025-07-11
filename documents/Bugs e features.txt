@@ -1,5 +1,7 @@
 Alterar as variáveis (item, price) para (itemType, itemPrice) - OK
 Decimal no campo de preço - OK
 
-Atualizar está cadastrando, entre outro pequenos detalhes visuais - Possivel correção: Fazer com que o modal feche após a função editar - Pendente
-Ajustar front idex. Fazer com que os preços sejam formatados para real.
+Atualizar está cadastrando, entre outro pequenos detalhes visuais - Possivel correção: Fazer com que o modal feche após a função editar - OK
+Ajustar front idex. Fazer com que os preços sejam formatados para real. - OK
+
+Numeros maiores que 999,99 não são adicionados no carrinho - Possívelmente usar a conversão novamente antes de salvar na variável local.
