@@ -6,14 +6,12 @@ var productIndexInfos = (document.querySelector(".productList"))
 
 showInfo()
 
-console.log(cartList)
-
 function showInfo()
 {
     productList.forEach((element, index) =>
     {
         let productListHtml = 
-        `
+        `   
         <div class ="productCard">
             <div class="productImgCard">
                 <img class="productImg"src="${element.productImg}" alt="productImg">

@@ -47,7 +47,7 @@ function showInfo() {
         `<tr class="productDetails">
             <td>${index}</td>
             <td><img src=${element.productImg}></img></td>
-            <td>${element.productName}</td>
+             <td>${element.productName}</td>
             <td>R$ ${element.productPrice}</td>
             <td>${element.productType}</td>
             <td>
