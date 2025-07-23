@@ -1,4 +1,4 @@
-🌩️ zProjeto: Catalogo utilizando JavaScript
+Projeto: Catalogo utilizando JavaScript
 Projeto front-end completo com foco no aprendizado de JavaScript, HTML5 e CSS3. 
 A aplicação simula um pequeno e-commerce, permitindo a criação, leitura, atualização e exclusão (CRUD) de produtos, 
 além de uma funcionalidade de carrinho de compras, com todos os dados persistidos no localStorage do navegador.
